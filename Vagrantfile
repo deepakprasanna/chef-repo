@@ -81,6 +81,7 @@ Vagrant.configure("2") do |config|
   #   chef.validation_key_path = ".chef/thoughtster-validator.pem"
   # end
   config.omnibus.chef_version = :latest
+  config.berkshelf.enabled = true
   config.vm.provision :chef_client do |chef|
     chef.provisioning_path = "/etc/chef"
     chef.chef_server_url = "https://api.opscode.com/organizations/thoughtster"

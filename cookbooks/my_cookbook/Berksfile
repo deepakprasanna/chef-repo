@@ -10,7 +10,7 @@
 # This declares the default location to search for cookbooks. The key :opscode
 # tells Berkshelf to search community.opscode.com for cookbooks. For a list of
 # other valid keys, see the Berkshelf documentation
-#site :opscode
+source "https://api.berkshelf.com"
 
 # Example usage
 # -------------
@@ -32,4 +32,4 @@
 # Uncomment to point at a local cookbook on the filesystem, relative to the
 # current working directory.
 # cookbook "myserver", :path => "/code/myserver-cookbook"
-cookbook 'my_cookbook', path: 'cookbooks/my_cookbook'
+metadata
