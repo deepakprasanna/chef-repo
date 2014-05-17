@@ -3,14 +3,12 @@ DEPENDENCIES
     path: cookbooks/my_cookbook
 
 GRAPH
-  apt (2.3.10)
   chef-client (3.5.0)
     cron (>= 1.2.0)
     logrotate (>= 1.2.0)
   cron (1.4.0)
   logrotate (1.5.0)
   my_cookbook (0.1.0)
-    apt (>= 0.0.0)
     chef-client (>= 0.0.0)
     ntp (>= 0.0.0)
   ntp (1.6.2)
